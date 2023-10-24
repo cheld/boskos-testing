@@ -34,6 +34,6 @@ resources:
 
   - type: autoscaling-env
     state: free
-    min-count: 2
+    min-count: 0
     max-count: 5
     lifespan: 5m
