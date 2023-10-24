@@ -75,7 +75,4 @@ echo
 echo "----------------Testing------------------------"
 kubectl get resources -n boskos
 echo
-echo
-curl -X POST 'http://boskos.boskos.svc.cluster.local/acquire?type=numeric-project&state=dirty&dest=busy&owner=christoph'
-boskosctl acquire --server-url http://localhost  --owner-name christoph --type manual-token --target-state used --state free
-kubectl get resources -n boskos
+echo "Installation finished."
