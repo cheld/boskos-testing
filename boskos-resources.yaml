@@ -13,20 +13,13 @@
 # limitations under the License.
 
 resources:
-  - names:
-      - project-alfa
-      - project-bravo
-      - project-charlie
-      - project-delta
-    state: dirty
-    type: phonetic-project
 
   - names:
-      - project-one
-      - project-two
-      - project-three
+      - account-one
+      - account-two
+      - account-three
     state: dirty
-    type: numeric-project
+    type: aws-account
 
   - names:
       - token-1
@@ -39,8 +32,8 @@ resources:
     state: free
     type: manual-token
 
-  - type: automatic-token
+  - type: autoscaling-env
     state: free
-    min-count: 5
+    min-count: 2
     max-count: 5
     lifespan: 5m
