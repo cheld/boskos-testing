@@ -30,7 +30,7 @@ resources:
       - token-6
       - token-7
     state: free
-    type: manual-token
+    type: test-environment
 
   - type: autoscaling-env
     state: free
